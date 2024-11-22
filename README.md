@@ -1,31 +1,49 @@
-# Getting Started with Create React App
+# Infinite Scrolling and Searchable Product List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application built with TypeScript, implementing an infinite scrolling product list with search functionality. It uses the DummyJSON Product API to fetch and display product data.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Infinite Scrolling: Automatically loads more products as the user scrolls down.
+- Search Functionality: Filters products by name in real-time using a debounced search input.
+- Responsive Design: Displays product name, price, and image in a simple card layout.
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Before you begin, ensure you have the following installed on your machine:
+    - Node.js (v14 or later)
+    - npm or yarn
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Installation
 
-### `npm test`
+Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    - git clone https://github.com/your-username/infinite-scroll-products.git
+    - cd infinite-scroll-products
+Install dependencies:
 
-### `npm run build`
+    - npm install
+    or
+    - yarn install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Running the Application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    - npm start
+    or
+    -yarn start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Open your browser and navigate to:
+    - http://localhost:3000
+
+### Testing the Application
+
+1. Infinite Scrolling:
+    - Scroll to the bottom of the product list.
+    - Ensure more products are loaded automatically.
+2. Search:
+    - Type a product name in the search bar.
+    - Verify that the displayed products match the search query.
+3. Reset:
+    - Clear the search bar.
+    - Confirm that the full product list reloads and infinite scrolling works again.
 
